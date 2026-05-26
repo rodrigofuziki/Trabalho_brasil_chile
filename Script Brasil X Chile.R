@@ -45,11 +45,12 @@ options(repos = c(CRAN = "https://cloud.r-project.org"))
 
 # OBSERVACAO IMPORTANTE:
 
-# A cobertura dos dados é satisfatória nos Módulos 1, 2 e 3,porém há
+# A cobertura dos dados é boa nos Módulos 1, 2 e 3, mas há
 # limitacoes nos modulos 4 e 5 especialmente em reservas internacionais, 
 # dívida externa e dívida pública para o Chile no WDI
 # Essas limitações foram mantidas como NA e documentadas no script.
-# no inicio desses modulos informarei novamente sobre a falta de alguns dados
+# no inicio desses respectivos modulos informarei novamente 
+# sobre a falta de alguns dados
 
 paises <- c("BR", "CL")
 
