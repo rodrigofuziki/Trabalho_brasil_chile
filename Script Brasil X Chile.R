@@ -14,10 +14,6 @@ dir.create("data/processed", recursive = TRUE, showWarnings = FALSE)
 dir.create("outputs/figs",   recursive = TRUE, showWarnings = FALSE)
 dir.create("outputs/tables", recursive = TRUE, showWarnings = FALSE)
 
-# Instale, se necessario:
-# install.packages(c("tidyverse", "wbstats", "lubridate", "patchwork", "gt", "scales"),
-#                  repos = "https://cloud.r-project.org")
-
 library(tidyverse)
 library(wbstats)
 library(lubridate)
@@ -199,7 +195,6 @@ dados_wdi <- dados_wdi_raw |>
 
 readr::write_csv(dados_wdi, "data/processed/wdi_brasil_chile_2000_2025_limpo.csv")
 
-# Checagem geral de cobertura dos indicadores.
 cobertura_wdi <- dados_wdi |>
   group_by(pais) |>
   summarise(
